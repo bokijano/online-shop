@@ -1,0 +1,193 @@
+.fontOne {
+  font-family: "Gugi", cursive;
+}
+.fontTwo {
+  font-family: "ZCOOL KuaiLe", cursive;
+}
+.fontThree {
+  font-family: "Anton", sans-serif;
+}
+.fontFour {
+  font-family: "Josefin Sans", sans-serif;
+}
+.fontFive {
+  font-family: "Acme", sans-serif;
+}
+.fontSix {
+  font-family: "Righteous", cursive;
+}
+.fontSeven {
+  font-family: "Permanent Marker", cursive;
+}
+.fontEight {
+  font-family: "Courgette", cursive;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  text-transform: capitalize;
+}
+.grid-furniture {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1.5rem;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-display {
+  position: absolute;
+  width: 200px;
+  top: 40%;
+  right: 0;
+  text-align: center;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+  transform: translateX(101%);
+}
+.img-container:hover .btn-display {
+  transform: translateX(0);
+}
+.btn-display:hover {
+  background: blue;
+  opacity: 1;
+}
+.home-page {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 15px;
+}
+.mobile-device {
+  display: none;
+}
+.head-look {
+  margin-top: -100px;
+  text-shadow: 5px 5px 15px whitesmoke;
+}
+.coll-btn {
+  width: 50%;
+  margin-left: 35%;
+  margin-right: 15%;
+  font-size: 25px;
+  font-weight: bolder;
+  box-shadow: 5px 5px 15px;
+}
+.brand-look {
+  color: whitesmoke;
+}
+.brand-look:hover {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: "Righteous", cursive;
+}
+.page-look {
+  margin-left: 70px;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  font-family: "Righteous", cursive;
+}
+.page-look:hover {
+  font-family: "Courgette", cursive;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.nav-icon {
+  font-size: 2rem;
+}
+.cart-btn {
+  margin-top: 5px;
+  cursor: pointer;
+  color: whitesmoke;
+  position: relative;
+}
+.cart-btn:hover {
+  color: lightgray;
+}
+.item-plus {
+  width: 25px;
+  position: absolute;
+  background-color: dodgerblue;
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-top: -60px;
+  margin-left: 25px;
+  text-align: center;
+  border-radius: 5px;
+}
+.close-cart {
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.home-look {
+  margin-top: 100px;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  position: relative;
+}
+.shop-look {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 0.5rem;
+  position: absolute;
+  margin-top: -50px;
+}
+.furniture-look,
+.technique-look {
+  width: 50vw;
+  margin-left: 100px;
+  font-size: 40px;
+  text-transform: capitalize;
+  font-family: "Permanent Marker", cursive;
+  font-weight: bolder;
+  text-shadow: 5px 5px 15px;
+}
+.img-home {
+  display: none;
+  max-width: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .furniture-look,
+  .technique-look {
+    margin-left: 0px;
+  }
+  .home-look {
+    margin-top: 150px;
+  }
+  .shop-look {
+    max-width: 90vw;
+    margin-top: 50px;
+  }
+  .img-home {
+    display: block;
+  }
+  .grid-furniture {
+    grid-template-columns: 1fr;
+  }
+  .mobile-device {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+  }
+  .home-page {
+    width: 100%;
+    margin: 0;
+  }
+  .coll-btn {
+    width: 80%;
+    margin-left: 15%;
+    margin-right: 5%;
+  }
+}
